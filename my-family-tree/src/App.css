@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.family-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.parents,
+.children,
+.others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.person-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.connector,
+.spouse-connector {
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+
+.vertical-connector {
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.person-box {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+}
+
+.person-box.male {
+  background-color: #add8e6; /* Light blue for male */
+}
+
+.person-box.female {
+  background-color: #ffb6c1; /* Light pink for female */
+}
+
+.person-box h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.person-box p {
+  margin: 8px 0 0;
+  color: #555;
+}

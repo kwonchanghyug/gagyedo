@@ -1,0 +1,52 @@
+.family-tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.person-box {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+}
+
+.person-box.main {
+  border: 2px solid #000; /* 기본 인물에 대한 두꺼운 테두리 */
+}
+
+.person-box.male {
+  background-color: #add8e6; /* Light blue for male */
+}
+
+.person-box.female {
+  background-color: #ffb6c1; /* Light pink for female */
+}
+
+.person-box h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.person-box p {
+  margin: 8px 0 0;
+  color: #555;
+}
+
+.person-box button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.person-box button:hover {
+  background-color: #0056b3;
+}
